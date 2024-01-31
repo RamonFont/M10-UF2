@@ -30,6 +30,6 @@ while int(num) != mesos[0]:
     elif int(num) == mesos[12]:
         print("Desembre")
     
-    num= input("Escriu un num")
+    num= input("Escriu un num ")
 
     

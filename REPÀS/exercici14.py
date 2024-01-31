@@ -1,8 +1,8 @@
-num= input("Escriu 10 numeros separats per espais ")
+cadenaImput= input("Escriu 10 numeros separats per espais: ")
 
-numInt = num.split()
+cadenaInt = cadenaImput.split()
 
-tupla =[int(numero) for numero in numInt]
+tupla =[int(num) for num in cadenaInt]
 
 tupla_ordenada = tuple(sorted(tupla, reverse=True))
 
