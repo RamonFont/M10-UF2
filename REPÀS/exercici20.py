@@ -7,7 +7,5 @@ while afegir == "a":
     edat = input("Escriu una edat: ")
     afegir = input("Vols seguir afegint? a:si, b:no ")
     myDict[nom] = edat
-    if myDict.values(nom) == 2:
-        myDict.popitem()
     
 print(myDict)
