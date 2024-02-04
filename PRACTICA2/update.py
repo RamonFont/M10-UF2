@@ -1,10 +1,11 @@
 from connection import conn
 from connection import connection
 
-sql_update = """UPDATE public.user SET user_email='rogers@info.com' WHERE user_id=1
-"""
+def user_update(connection):
+    sql_update = """UPDATE public.user SET user_email='rogers@info.com' WHERE user_id=1
+    """
 
-connection.execute(sql_update)
-conn.commit()
-result = connection.rowcount
-print("id modificada: ", result, "Actualització efectuada sense errors")
+    connection.execute(sql_update)
+    conn.commit()
+    result = connection.rowcount
+    print("id modificada: ", result, "Actualització efectuada sense errors")
