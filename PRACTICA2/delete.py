@@ -1,9 +1,13 @@
-from connection import conn
-from connection import crear_connection
+import psycopg2
 
-def delete_user(connection):
-    sql_delete = """DELETE FROM public.users WHERE user_id=1
-    """
+def delete_users(connection):
+    try:
+        sql = '''DELETE FROM public.users WHERE user_id = 1'''
 
-    connection.execute(sql_delete)
-    conn.commit()
+        connection.execute(sql)
+        connection.connection.commit()
+        print("All users deleted successfully.")
+
+    except (Exception, psycopg2.Error) as error:
+        print("Error:", error)
+
