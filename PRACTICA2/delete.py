@@ -7,7 +7,7 @@ def delete_users(connection):
 
         connection.execute(sql)
         connection.connection.commit()
-        print("All users deleted successfully.")
+        print("Usuario Borrado")
 
     except (Exception, psycopg2.Error) as error:
         print("Error:", error)

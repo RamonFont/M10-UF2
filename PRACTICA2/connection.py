@@ -18,4 +18,4 @@ def create_connection():
 def close_connection(conn):
     if conn:
         conn.close()
-        print("Connection closed.")
+        print("Cerrar conexión")
