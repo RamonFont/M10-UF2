@@ -1,5 +1,6 @@
 import psycopg2
 
+#Legir els usuaris de la base de dades amb un layout personalitzat
 def read_users(connection):
     try:
         sql = '''SELECT * FROM public.users'''

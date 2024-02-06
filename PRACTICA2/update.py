@@ -1,5 +1,6 @@
 import psycopg2
 
+#Modificar parametre de un usuari
 def update_user(connection):
     try:
         sql = '''UPDATE public.users
